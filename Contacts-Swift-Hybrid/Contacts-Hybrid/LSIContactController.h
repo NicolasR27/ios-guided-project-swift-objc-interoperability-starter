@@ -8,9 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+@class Contact;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LSIContactController : NSObject
+
+@property (nonatomic,readonly)NSArray<Contact *> *contacts;
+
+
 
 @end
 
