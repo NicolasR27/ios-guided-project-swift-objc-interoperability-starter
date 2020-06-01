@@ -8,12 +8,9 @@
 
 import UIKit
 
-
-
-
 class ContactsTableViewController: UITableViewController {
 	
-    var contactController = LSIContactController()
+    var contactController = ContactController()
     
     
 	override func viewDidLoad() {
