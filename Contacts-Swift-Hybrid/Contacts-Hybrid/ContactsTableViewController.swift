@@ -10,6 +10,7 @@ import UIKit
 
 
 
+
 class ContactsTableViewController: UITableViewController {
 	
     var contactController = LSIContactController()

@@ -9,10 +9,18 @@
 import Foundation
 
 class Contact: NSObject {
-    var name: String
-    var relationship: String?
+   @objc var name: String
+   @objc var relationship: String?
     
-    init(name:String,relationship: String?){
+//
+//  @objc override init(){
+//        self.name = ""
+//        self.relationship = nil
+//        super.init()
+//    }
+//
+   
+    @objc init(name: String,relationship: String?){
         self.name = name
            self.relationship = relationship
     }

@@ -7,13 +7,19 @@
 //
 
 #import "LSIContactController.h"
+#import "Contacts_Hybrid-Swift.h"
 
 @implementation LSIContactController
 
 @synthesize contacts = _contacts;
 -(NSArray<Contact *> *)contacts{
     if(!_contacts){
-        _contacts = [[NSArray alloc] init];
+        _contacts = @[
+            [[Contact alloc]initWithName:@"Nick" relationship:@"Me"],
+            [[Contact alloc]initWithName:@"Miranda" relationship:@"sister"],
+            
+            
+        ];
         
     }
     return _contacts;
